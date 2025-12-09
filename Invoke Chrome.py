@@ -13,5 +13,5 @@ driver.maximize_window()
 print(f"The current page title is : {driver.title}")
 # Know the current page url:
 print(f"The current url is: {driver.current_url}")
-#time.sleep(2)
+time.sleep(2)
 # Programe has been ended.
