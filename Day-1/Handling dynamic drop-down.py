@@ -1,6 +1,6 @@
 import time
 
-from gi.overrides.keysyms import value
+#from gi.overrides.keysyms import value
 from selenium import webdriver
 from selenium.webdriver.common.by import By
 
