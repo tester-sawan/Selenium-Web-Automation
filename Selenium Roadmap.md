@@ -6,7 +6,7 @@ Day-1: Web Elements
 5. Radio Button automation method
 6. Handling Java/JavaScript alert using selenium.
 __________________________________________________________________
-Day-2: Syncronization - Implict & Explicit wait 
+Day-2: Syncronization - Implict & Explicit wait. 
 1. What are waits?
 2. Implicit Wait 
 3. Explicit Wait
