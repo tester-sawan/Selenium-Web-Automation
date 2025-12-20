@@ -11,5 +11,9 @@ Day-2: Syncronization
 2. Implicit Wait 
 3. Explicit Wait
 __________________________________________________________________
-
+Day-3: Handling Advenaced User Interactions/Child Windows,Frame
+1. Use of Action Class
+2. Technique to handle Child windows/tabs
+3. Frames and techniques to handle.
+-----------------------------------------------------------------
 
