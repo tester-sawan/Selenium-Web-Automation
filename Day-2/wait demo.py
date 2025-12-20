@@ -46,7 +46,7 @@ total_amount = 0
 for amount in table_item:
      total_amount = total_amount + int(amount.text)
 
-#print(total_amount)
+print(f"Total amount is: {total_amount}")
 shown_total_amount = driver.find_element(By.XPATH, "//span[@class='totAmt']").text
 shown_total_amount = int(shown_total_amount)
 #print(shown_total_amount,type(shown_total_amount))
@@ -60,7 +60,15 @@ if total_amount == shown_total_amount:
     print("Total Amount Match")
 else:
     print("Total Amount not matching")
-
+get_discount_value = driver.find_element(By.XPATH,"//span[@class='discountPerc']").text
+get_dicount = get_discount_value.strip("%")
+discount = float(get_dicount)
+final_value = total_amount - (total_amount * discount / 100)
+print(f"The final value as per calculation: {final_value}")
+actual_final_value = driver.find_element(By.CSS_SELECTOR,".discountAmt").text
+actual_final_value = float(actual_final_value)
+print(f"The actual final value: {actual_final_value}")
+assert actual_final_value == actual_final_value
 #print(actual_promo_info)
 driver.find_element(By.XPATH,"//button[text()='Place Order']").click()
 assert driver.current_url == "https://rahulshettyacademy.com/seleniumPractise/#/country"
