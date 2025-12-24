@@ -31,4 +31,4 @@ if expected_success_message in actual_success_message:
     print("Form has been successfully submitted.")
 else:
     print("Form has not successfully submitted.")
-time.sleep(1)
+
