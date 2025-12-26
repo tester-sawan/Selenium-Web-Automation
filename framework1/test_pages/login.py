@@ -1,0 +1,18 @@
+from selenium.webdriver.common.by import By
+
+
+class Login:
+    def __init__(self,driver):
+        self.driver = driver # Instance Variable
+    # Class Variable.
+        self.username = (By.ID, "username")
+        self.password = (By.ID, "password")
+        self.term_condition = (By.ID, "terms")
+        self.sign_in = (By.ID, "signInBtn")
+
+    def login_action(self):
+        # * will break tuple into two parameter.
+        self.driver.find_element(*self.username).send_keys("rahulshettyacademy")
+        self.driver.find_element(*self.password).send_keys("learning")
+        self.driver.find_element(*self.term_condition).click()
+        self.driver.find_element(*self.sign_in).click()
