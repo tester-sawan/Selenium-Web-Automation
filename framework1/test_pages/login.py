@@ -12,6 +12,7 @@ class Login:
 
     def login_action(self):
         # * will break tuple into two parameter.
+        self.driver.maximize_window()
         self.driver.find_element(*self.username).send_keys("rahulshettyacademy")
         self.driver.find_element(*self.password).send_keys("learning")
         self.driver.find_element(*self.term_condition).click()
